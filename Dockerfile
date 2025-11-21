@@ -2,6 +2,8 @@ FROM registry.access.redhat.com/ubi9/go-toolset:latest as build
 
 USER root
 
+WORKDIR /build
+
 ARG GOARCH=amd64
 ARG GOOS=linux
 
